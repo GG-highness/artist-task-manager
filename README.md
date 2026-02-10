@@ -86,11 +86,31 @@ artist-task-manager/
 
 ### 前提条件
 - Node.js 18以上
-- Docker開発環境
+- Docker Desktop (MySQL用)
 
-### セットアップ手順
+### バックエンド セットアップ
+```bash
+cd backend
 
-**TODO:後続のタスクで記載**
+# 依存パッケージのインストール
+npm install
+
+# 環境変数の設定
+cp .env.example .env
+
+# 開発サーバー起動（GraphQL スキーマも自動生成されます）
+npm run start:dev
+```
+
+起動後、http://localhost:3000/graphql でGraphQL Playgroundにアクセスできます。
+
+### フロントエンド セットアップ
+
+**TODO: Issue #3 で記載**
+
+### Docker環境
+
+**TODO: Issue #4 で記載**
 
 ## 💻 開発ワークフロー
 
